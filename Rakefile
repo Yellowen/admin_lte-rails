@@ -17,6 +17,7 @@ task :convert do
   puts dir
 
   app_path  = File.expand_path('../app', __FILE__)
+  lib_path  = File.expand_path('../lib', __FILE__)
   cssjanus  = File.expand_path('../lib/to_rtl.js', __FILE__)
   style_dir = "#{app_path}/assets/stylesheets/admin_lte"
   js_dir = "#{app_path}/assets/javscripts/admin-lte"
@@ -45,6 +46,11 @@ task :convert do
       `nodejs #{cssjanus} #{new_path} > #{rtl_path}`
     end
   end
+
+  FileUtils.cp("#{lib_path}/ltr/admin_lte.css",
+               "#{style_dir}/ltr/admin_lte.css")
+  FileUtils.cp("#{lib_path}/rtl/admin_lte.css",
+               "#{style_dir}/rtl/admin_lte.css")
 
   # Dir.glob("#{dir}/javascripts/**/*") do |file|
 
