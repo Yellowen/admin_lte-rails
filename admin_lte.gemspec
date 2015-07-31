@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'admin_lte/version'
+require 'admin_lte-rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "admin_lte"
+  spec.name          = 'admin_lte-rails'
   spec.version       = AdminLte::VERSION
   spec.authors       = ["Sameer Rahmani"]
   spec.email         = ["lxsameer@gnu.org"]
 
-  spec.summary       = %q{Gemified AdminLTE, with RTL support.}
-  spec.description   = %q{Gemified AdminLTE, with RTL support.}
-  spec.homepage      = "http://github.com/Yellowen/admin_lte"
+  spec.summary       = %q{Gemified AdminLTE, with SASS and RTL support for Rails.}
+  spec.description   = %q{Gemified AdminLTE, with SASS and RTL support for Rails.}
+  spec.homepage      = "http://github.com/Yellowen/admin_lte-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

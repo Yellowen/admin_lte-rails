@@ -1,4 +1,4 @@
-require 'admin_lte/version'
+require 'admin_lte-rails/version'
 require 'bootstrap-sass'
 require 'rails-assets-admin-lte'
 require 'jquery-rails'
