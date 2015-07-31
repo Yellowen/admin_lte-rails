@@ -23,6 +23,7 @@ task :convert do
   js_dir = "#{app_path}/assets/javscripts/admin-lte"
 
   orig_style = "#{dir}/stylesheets/admin-lte"
+  admin_lte_font = "#{style_dir}/admin_lte_font.scss"
   orig_js = "#{dir}/javascripts/admin-lte"
 
   FileUtils.rmdir "#{style_dir}/ltr"
@@ -37,20 +38,31 @@ task :convert do
     FileUtils.mkdir_p File.dirname(rtl_path)
 
     unless File.directory? file
-      puts "Source: #{file}"
+      puts "Source: #{file}, #{File.basename(file)}"
       puts "LTR: #{new_path}"
       puts "RTL: #{rtl_path}"
-      puts "================="
 
       FileUtils.cp(file, new_path)
+      if File.basename(file) == 'AdminLTE.scss'
+        puts "Removing google font configuration."
+        `head -n 1 #{file} > #{admin_lte_font}`
+        `tail -n +2 #{file} > #{new_path}`
+      end
+
       `nodejs #{cssjanus} #{new_path} > #{rtl_path}`
+      puts "================="
     end
   end
 
   FileUtils.cp("#{lib_path}/ltr/admin_lte.css",
                "#{style_dir}/ltr/admin_lte.css")
+  FileUtils.cp("#{lib_path}/ltr/_bootstrap.scss",
+               "#{style_dir}/ltr/_bootstrap.scss")
+
   FileUtils.cp("#{lib_path}/rtl/admin_lte.css",
                "#{style_dir}/rtl/admin_lte.css")
+  FileUtils.cp("#{lib_path}/rtl/_bootstrap.scss",
+               "#{style_dir}/rtl/_bootstrap.scss")
 
   # Dir.glob("#{dir}/javascripts/**/*") do |file|
 
