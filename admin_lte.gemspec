@@ -30,7 +30,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rails-assets-bootstrap-daterangepicker'
   spec.add_dependency 'rails-assets-jquery-sparkline'
   spec.add_dependency 'rails-assets-jquery-icheck'
+
   spec.add_dependency 'bootstrap-sass'
+  spec.add_dependency 'rails-assets-bootstrap-rtl'
+
   spec.add_dependency 'chart-js-rails'
   spec.add_dependency 'ionicons-rails'
 

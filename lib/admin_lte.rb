@@ -1,4 +1,5 @@
 require 'admin_lte/version'
+require 'bootstrap-sass'
 require 'rails-assets-admin-lte'
 require 'jquery-rails'
 require 'font-awesome-rails'
@@ -10,7 +11,6 @@ require 'rails-assets-jquery-knob'
 require 'rails-assets-bootstrap-daterangepicker'
 require 'rails-assets-jquery-sparkline'
 require 'rails-assets-jquery-icheck'
-require 'bootstrap-sass'
 require 'chart-js-rails'
 require 'ionicons-rails'
 
