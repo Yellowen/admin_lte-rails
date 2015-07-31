@@ -26,16 +26,17 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'select2-rails'
   spec.add_dependency 'momentjs-rails'
   spec.add_dependency 'bootstrap3-datetimepicker-rails'
+
+  spec.add_dependency 'bootstrap-sass'
+
+  spec.add_dependency 'chart-js-rails'
+  spec.add_dependency 'ionicons-rails'
+
+  spec.add_dependency 'rails-assets-bootstrap-rtl'
   spec.add_dependency 'rails-assets-jquery-knob'
   spec.add_dependency 'rails-assets-bootstrap-daterangepicker'
   spec.add_dependency 'rails-assets-jquery-sparkline'
   spec.add_dependency 'rails-assets-jquery-icheck'
-
-  spec.add_dependency 'bootstrap-sass'
-  spec.add_dependency 'rails-assets-bootstrap-rtl'
-
-  spec.add_dependency 'chart-js-rails'
-  spec.add_dependency 'ionicons-rails'
 
   spec.add_development_dependency 'bundler', "~> 1.10"
   spec.add_development_dependency 'rake', "~> 10.0"

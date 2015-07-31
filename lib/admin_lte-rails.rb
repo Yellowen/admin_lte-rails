@@ -1,18 +1,4 @@
 require 'admin_lte-rails/version'
-require 'bootstrap-sass'
-require 'jquery-rails'
-require 'font-awesome-rails'
-require 'jquery-ui-rails'
-require 'select2-rails'
-require 'momentjs-rails'
-require 'chart-js-rails'
-require 'ionicons-rails'
-require 'bootstrap3-datetimepicker-rails'
-require 'rails-assets-jquery-knob'
-require 'rails-assets-bootstrap-daterangepicker'
-require 'rails-assets-jquery-sparkline'
-require 'rails-assets-jquery-icheck'
-require 'rails-assets-admin-lte'
 
 module AdminLte
 
@@ -55,3 +41,19 @@ class RailsAssets
 end
 
 RailsAssets.components << AdminLte
+
+require 'bootstrap-sass'
+require 'jquery-rails'
+require 'font-awesome-rails'
+require 'jquery-ui-rails'
+require 'select2-rails'
+require 'momentjs-rails'
+require 'chart-js-rails'
+require 'ionicons-rails'
+require 'bootstrap3-datetimepicker-rails'
+
+require 'rails-assets-jquery-knob'
+require 'rails-assets-bootstrap-daterangepicker'
+require 'rails-assets-jquery-sparkline'
+require 'rails-assets-jquery-icheck'
+require 'rails-assets-admin-lte'
