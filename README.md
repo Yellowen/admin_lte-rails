@@ -1,17 +1,18 @@
-# AdminLte
+# AdminLTE Rails
+Gem wrapper to include the AdminLTE dashboard interface via the Rails 3.1 asset pipeline.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/admin_lte`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem provides extra features on top of AdminLTE. For example two of the most awesome features
+are SASS/SCSS and RTL support for AdminLTE which does not exists in the original version. Also
+this gem fetch and converts the original source code (mostly) so main credits goes to AdminLTE
+contributors.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'admin_lte'
+gem 'admin_lte-rails'
 ```
-
 And then execute:
 
     $ bundle
@@ -22,20 +23,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the **admin_lte-rails** gem all you need to do is to require the related **admin_lte-rails** maniifest
+in you application manifest. for example:
+
+For ltr version of AdminLTE stylesheets add this to your `app/assets/stylesheets/application.css`:
+
+```css
+//= require admin_lte/ltr/admin_lte
+```
+
+and for the rtl version add this:
+
+```css
+//= require admin_lte/rtl/admin_lte
+```
+
+Also you need to add this into your `app/assets/javascripts/application.js`
+
+```js
+//= require admin_lte/admin_lte
+```
+
+**NOTE:** Default setting does not include the google font configuration so you have to add `Source Sans Pro` to your
+project. I done this because I hate using online google font service. But if you like it you can simply add this line
+before adding admin_lte into you manifest:
+
+```css
+//= require admin_lte/admin_lte_font
+```
 
 ## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To create the latest version of AdminLTE only run `rake convert` in this gem. That's it.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/admin_lte. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Yellowen/admin_lte-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
