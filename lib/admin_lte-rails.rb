@@ -43,6 +43,7 @@ end
 RailsAssets.components << AdminLte
 
 require 'bootstrap-sass'
+require 'rails-assets-bootstrap-rtl'
 require 'jquery-rails'
 require 'font-awesome-rails'
 require 'jquery-ui-rails'

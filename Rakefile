@@ -57,12 +57,12 @@ task :convert do
   FileUtils.cp("#{lib_path}/ltr/admin_lte.css",
                "#{style_dir}/ltr/admin_lte.css")
   FileUtils.cp("#{lib_path}/ltr/_bootstrap.scss",
-               "#{style_dir}/ltr/_bootstrap.scss")
+               "#{style_dir}/ltr/bootstrap_manifest.scss")
 
   FileUtils.cp("#{lib_path}/rtl/admin_lte.css",
                "#{style_dir}/rtl/admin_lte.css")
   FileUtils.cp("#{lib_path}/rtl/_bootstrap.scss",
-               "#{style_dir}/rtl/_bootstrap.scss")
+               "#{style_dir}/rtl/bootstrap_manifest.scss")
 
   # Dir.glob("#{dir}/javascripts/**/*") do |file|
 
