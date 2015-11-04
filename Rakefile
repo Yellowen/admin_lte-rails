@@ -62,6 +62,8 @@ task :convert do
                "#{style_dir}/rtl/admin_lte.css")
   FileUtils.cp("#{lib_path}/rtl/_bootstrap.scss",
                "#{style_dir}/rtl/bootstrap_manifest.scss")
+  FileUtils.cp("#{lib_path}/rtl/_sidebar_rtl_fix.scss",
+               "#{style_dir}/rtl/sidebar_rtl_fix.scss")
 
   # Dir.glob("#{dir}/javascripts/**/*") do |file|
 
