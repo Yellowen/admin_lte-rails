@@ -48,7 +48,7 @@ task :convert do
         `tail -n +2 #{file} > #{new_path}`
       end
 
-      `nodejs #{cssjanus} #{new_path} > #{rtl_path}`
+      `node #{cssjanus} #{new_path} > #{rtl_path}`
       puts "================="
     end
   end
