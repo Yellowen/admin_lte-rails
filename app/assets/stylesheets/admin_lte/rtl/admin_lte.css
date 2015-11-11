@@ -9,9 +9,9 @@ datepicker3.css
 daterangepicker-bs3
 bootstrap3-wysihtml5
 */
-//= require admin_lte/rtl/AdminLTE
-//= require admin_lte/rtl/skins/_all-skins
 //= require select2
 //= require select2-bootstrap
+//= require admin_lte/rtl/AdminLTE
+//= require admin_lte/rtl/skins/_all-skins
 //= require jquery-icheck/skins/flat/_all
 //= require admin_lte/rtl/sidebar_rtl_fix
