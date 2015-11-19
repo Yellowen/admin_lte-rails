@@ -8,3 +8,6 @@
 /spec/reports/
 /tmp/
 node_modules/
+app/assets/javascripts/admin_lte/.js
+app/assets/javascripts/admin_lte/demo.js
+app/assets/javascripts/admin_lte/pages/

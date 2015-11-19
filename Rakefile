@@ -19,7 +19,7 @@ task :convert do
   lib_path  = File.expand_path('../lib', __FILE__)
   cssjanus  = File.expand_path('../lib/to_rtl.js', __FILE__)
   style_dir = "#{app_path}/assets/stylesheets/admin_lte"
-  js_dir = "#{app_path}/assets/javscripts/admin-lte"
+  js_dir = "#{app_path}/assets/javascripts/admin_lte"
 
   orig_style = "#{dir}/stylesheets/admin-lte"
   admin_lte_font = "#{style_dir}/admin_lte_font.scss"
@@ -65,21 +65,21 @@ task :convert do
   FileUtils.cp("#{lib_path}/rtl/_sidebar_rtl_fix.scss",
                "#{style_dir}/rtl/sidebar_rtl_fix.scss")
 
-  # Dir.glob("#{dir}/javascripts/**/*") do |file|
+   Dir.glob("#{dir}/javascripts/**/*") do |file|
 
-  #   new_path = file.gsub(orig_js, "#{js_dir}/")
+     new_path = file.gsub(orig_js, "#{js_dir}/")
 
-  #   FileUtils.mkdir_p File.dirname(new_path)
+     FileUtils.mkdir_p File.dirname(new_path)
 
 
-  #   unless File.directory? file
-  #     puts "Source: #{file}"
-  #     puts "DST: #{new_path}"
-  #     puts "================="
+     unless File.directory? file
+       puts "Source: #{file}"
+       puts "DST: #{new_path}"
+       puts "================="
 
-  #     FileUtils.cp(file, new_path)
-  #   end
-  # end
+       FileUtils.cp(file, new_path)
+     end
+   end
 
 
 
