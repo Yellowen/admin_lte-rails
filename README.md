@@ -39,19 +39,19 @@ in you application manifest. for example:
 For ltr version of AdminLTE stylesheets add this to your `app/assets/stylesheets/application.css`:
 
 ```css
-//= require admin_lte/ltr/admin_lte
+*= require admin_lte/ltr/admin_lte
 ```
 
 and for the rtl version add this:
 
 ```css
-//= require admin_lte/rtl/admin_lte
+*= require admin_lte/rtl/admin_lte
 ```
 
 Also you need to add this into your `app/assets/javascripts/application.js`
 
 ```js
-*= require admin_lte/admin_lte
+//= require admin_lte/admin_lte
 ```
 
 **NOTE:** Default setting does not include the google font configuration so you have to add `Source Sans Pro` to your
