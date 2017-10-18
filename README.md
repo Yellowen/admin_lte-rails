@@ -51,7 +51,7 @@ and for the rtl version add this:
 Also you need to add this into your `app/assets/javascripts/application.js`
 
 ```js
-//= require admin_lte/admin_lte
+*= require admin_lte/admin_lte
 ```
 
 **NOTE:** Default setting does not include the google font configuration so you have to add `Source Sans Pro` to your
