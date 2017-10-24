@@ -6,8 +6,8 @@ require 'admin_lte-rails/version'
 Gem::Specification.new do |spec|
   spec.name          = 'admin_lte-rails'
   spec.version       = AdminLte::VERSION
-  spec.authors       = ["Sameer Rahmani"]
-  spec.email         = ["lxsameer@gnu.org"]
+  spec.authors       = ["Sameer Rahmani", "Behnam Ahmad Khan Beigi"]
+  spec.email         = ["lxsameer@gnu.org", "yottanami@gnu.org"]
 
   spec.summary       = %q{Gemified AdminLTE, with SASS and RTL support for Rails.}
   spec.description   = %q{Gemified AdminLTE, with SASS and RTL support for Rails.}
