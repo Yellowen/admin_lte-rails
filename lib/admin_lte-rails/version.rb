@@ -1,3 +1,3 @@
 module AdminLte
-  VERSION = '2.3.8.2'
+  VERSION = '2.3.8.3'
 end

@@ -7,5 +7,5 @@
 //= require jquery-knob
 //= require jquery-sparkline
 //= require jquery-icheck
-//= require Chart
+//= require Chart.min
 //= require admin_lte/app
